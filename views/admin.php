@@ -1,5 +1,5 @@
 <?php
-include_once ('template/header.php');
+include_once ('header.php');
 ?>
 <!-- Container start -->
 <div class="container">
@@ -12,7 +12,7 @@ include_once ('template/header.php');
                 <div class="info-tiles admin-screen">
                     <div class="stats-detail" style="width: 170px; margin-right: 70px">
                         <p class="mb-2">Total Visitors</p>
-                        <h2>23</h2>
+                        <h2><?php echo $total_visitors;?></h2>
                     </div>
                     <div class="info-icon" style="background: #ccffff;">
                         <i class="icon-eye" style="color: #00ffff;"></i>
@@ -23,7 +23,7 @@ include_once ('template/header.php');
                 <div class="info-tiles admin-screen">
                     <div class="stats-detail" style="width: 170px; margin-right: 70px">
                         <p class="mb-2">Total Registration</p>
-                        <h2>2</h2>
+                        <h2><?php echo $total_products;?></h2>
                     </div>
                     <div class="info-icon" style="background: #ccccff">
                         <i class="icon-user1" style="color: #3333cc"></i>
@@ -35,5 +35,5 @@ include_once ('template/header.php');
 </div>
 <!-- Container end -->
 <?php
-include_once ('template/footer.php');
+include_once ('footer.php');
 ?>
