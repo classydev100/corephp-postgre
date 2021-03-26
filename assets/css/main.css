@@ -1091,6 +1091,10 @@ ul.header-tasks:last-child {
   margin-top: 400px;
   display: flex;
 }
+.admin-screen-child {
+  margin-top: 100px;
+  display: flex;
+}
 .skillset-container {
   padding: 1rem;
   background: #ffffff;
@@ -3537,7 +3541,9 @@ ul.statistics {
     .info-tiles .info-icon.secondary i {
       color: #e40000; }
   .info-tiles .stats-detail {
-    margin: 0 170px 0 0; }
+    margin: 0 170px 0 0;
+    width: 170px; margin-right: 70px
+  }
   .info-tiles h3 {
     margin: .3rem 0 .3rem 0;
     line-height: 100%; }
@@ -6159,7 +6165,7 @@ label {
     padding: 10px 15px;
     margin: 0; }
   .table-container .t-header {
-    margin: -10px -.6rem 0 -.6rem;
+    /*margin: -10px -.6rem 0 -.6rem;*/
     padding: 12px 10px;
     font-weight: 700; }
 
@@ -6265,8 +6271,8 @@ label {
   border-radius: 0px; }
 
 .gutters {
-  margin-right: -8px;
-  margin-left: -8px; }
+  margin-right: -100px;
+  margin-left: -100px; }
 
 .gutters > .col,
 .gutters > [class*="col-"] {
@@ -6311,4 +6317,26 @@ code {
 .visitor-screen {
   margin-top: 70px;
   display: flex;
+}
+.products_remove{
+  margin-left: 20px;
+}
+
+.visitor-remove{
+  float: right; margin-right: 10px
+}
+.back_arrow{
+  height: 40px;
+  width: 40px;
+  float: left;
+  font-size: 1.5rem;
+  border: 1px solid darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sign-in{
+  width: 100%;
 }

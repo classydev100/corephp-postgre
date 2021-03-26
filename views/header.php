@@ -17,11 +17,16 @@
         ************ Common Css Files *************
     ************ -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <!-- Icomoon Font Icons css -->
-    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/assets/fonts/icomoon/style.css">
     <!-- Master CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="/assets/vendor/datatables/dataTables.bs4.css" />
+    <link rel="stylesheet" href="/assets/vendor/datatables/dataTables.bs4-custom.css" />
+    <link href="/assets/vendor/datatables/buttons.bs.css" rel="stylesheet" />
 
 </head>
 <body>

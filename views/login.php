@@ -3,7 +3,7 @@
 ?>
 <!-- Container start -->
 <div class="container">
-    <form action="index.php" method="post">
+    <form action="/login" method="post">
         <div class="row justify-content-md-center">
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
                 <div class="login-screen">
@@ -24,7 +24,8 @@
                                 <label class="custom-control-label" for="remember_pwd">Remember me</label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%">Sign In</button>
+                        <button type="submit" class="btn btn-primary sign-in">Sign In</button>
+                        <p style="color: red"><?php if(isset($msg)) echo $msg;?></p>
                     </div>
                 </div>
             </div>
