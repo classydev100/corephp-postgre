@@ -6271,8 +6271,8 @@ label {
   border-radius: 0px; }
 
 .gutters {
-  margin-right: -100px;
-  margin-left: -100px; }
+  margin-right: -200px;
+  margin-left: -200px; }
 
 .gutters > .col,
 .gutters > [class*="col-"] {
@@ -6297,7 +6297,7 @@ code {
   width: 40px;
   float: right;
   font-size: 1.5rem;
-  border: 1px solid darkgrey;
+  /*border: 1px solid darkgrey;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6319,7 +6319,7 @@ code {
   display: flex;
 }
 .products_remove{
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .visitor-remove{
@@ -6330,7 +6330,7 @@ code {
   width: 40px;
   float: left;
   font-size: 1.5rem;
-  border: 1px solid darkgrey;
+  /*border: 1px solid darkgrey;*/
   display: flex;
   justify-content: center;
   align-items: center;

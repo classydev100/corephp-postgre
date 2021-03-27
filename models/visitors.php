@@ -14,3 +14,11 @@
         $result = pg_query($conn,"DELETE FROM visitors");
         return pg_affected_rows($result);
     }
+
+    function add_visitor_info($conn) {
+        $data['datetime'] = date('d/m/y h:i:s');
+        $data['ip_address'] = $_SERVER['REMOTE_ADDR'];
+        $data['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
+        $res = pg_insert($conn, 'visitors', $data, PGSQL_DML_EXEC );
+        return $res;
+    }

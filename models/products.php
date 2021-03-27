@@ -14,3 +14,15 @@
         $result = pg_query($conn,'DELETE FROM products WHERE id='.$id);
         return pg_affected_rows($result);
     }
+
+    function add_product($conn, $product){
+        unset($product['operation']);
+        $product['datetime'] = date('d/m/y h:i:s');
+        $res = pg_insert($conn, 'products', $product, PGSQL_DML_EXEC );
+        if($res){
+            $success = true;
+        } else{
+            $success = false;
+        }
+        return $success;
+    }

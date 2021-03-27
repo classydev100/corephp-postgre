@@ -5,4 +5,4 @@
     $conn = db_con();
     $total_visitors = count_visitors($conn);
     $total_products = count_products($conn);
-    include('views/admin.php');
+    include('views/dashboard/admin.php');

@@ -155,21 +155,28 @@ $(function () {
 
                         $.ajax({
                             method: "POST",
-                            url: "../backend/ceilo.php",
+                            url: "/cadastro_save",
                             data: {
                                 operation: 'createvalidation',
-                                category: category,
-                                request_number: request_number,
-                                purchase_date: purchase_date,
-                                lucky_number: luck_number,
                                 full_name: fullname,
                                 cpf: cpf,
-                                telephone: telephone_,
-                                email: email
+                                email: email,
+                                purchase_type_cate: category,
+                                request_number: request_number,
+                                purchase_month_year: purchase_date,
+                                lucky_number: luck_number,
+                                telephone: telephone_
+
                             },
                             success: function (result) {
                                 console.log(result);
-                                if (result == "success") document.getElementById("demo").innerHTML = "Your information has in the database!!! <br>Please try again";
+                                // var res = JSON.parse(result);
+                                // if(res){
+                                //     alert('Data saved successfully');
+                                // } else {
+                                //     alert('Data Saving Failed');
+                                // }
+                                // if (result == "success") document.getElementById("demo").innerHTML = "Your information has in the database!!! <br>Please try again";
                             },
                             error: function () {
                                 console.log("error")

@@ -7,13 +7,13 @@
 		<meta name="author" content="colorlib.com">
 
 		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="icon" href="../assets/favicon.ico" />
+		<link rel="icon" href="../../assets/favicon.ico" />
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="../assets/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+		<link rel="stylesheet" href="../../assets/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="../assets/css/style_index.css">
+		<link rel="stylesheet" href="../../assets/css/style_index.css">
 		
 		
 		<!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
@@ -35,9 +35,11 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
-								<img src="../assets/img/logo-cielo-negativo.svg" class="logo-img"/ >
+								<img src="../../assets/img/logo-cielo-negativo.svg" class="logo-img"/ >
 							</div>
-							<div class="col-sm-6"></div>
+							<div class="col-sm-6">
+<!--                                <a href="/dashboard"><button type="button" class="btn btn-success dashbord-btn">Dashboard</button></a>-->
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -48,7 +50,7 @@
 					<p class="subheader-title px-3">Informe abaixo os dados do banco no qual recebe suas vendas</p>
 				</div>
 			</div>
-            <form >
+            <form>
 				<div class="row mx-0 px-3" >
 					<div class="col-md-6 bg-white p-4 mx-auto border-radius-12" id="wizard1" >
 						<!-- SECTION 1 -->
@@ -153,12 +155,12 @@
 				<p class="text-center pt-3 mb-0 pb-3 px-3">Copyright 2020 Cielo. Todos os direitos reservados.</p>
             </form>
 		</div>
-		<script src="../assets/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+		<script src="../../assets/js/jquery-1.9.0.min.js" type="text/javascript"></script>
 
-		<script src="../assets/js/jquery.steps.js"></script>
+		<script src="../../assets/js/jquery.steps.js"></script>
 
-		<script src="../assets/js/main.js"></script>
-		<script src="../assets/js/maskcustom.js" type="text/javascript"></script>
+		<script src="../../assets/js/main.js"></script>
+		<script src="../../assets/js/maskcustom.js" type="text/javascript"></script>
 <!-- Template created and distributed by Colorlib -->
 </body>
 </html>

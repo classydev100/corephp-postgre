@@ -1,21 +1,25 @@
 // Basic DataTable
 $(function(){
 	$('#visitorsTable').DataTable({
-		'iDisplayLength': 4,
+		'iDisplayLength': 75,
 		"language": {
 			"lengthMenu": "Display _MENU_ Records Per Page",
 			"info": "Showing Page _PAGE_ of _PAGES_",
-		}
+		},
+		"searching": false,
+		"ordering": false
 	});
 });
 
 $(function(){
 	$('#productsTable').DataTable({
-		'iDisplayLength': 4,
+		'iDisplayLength': 75,
 		"language": {
 			"lengthMenu": "Display _MENU_ Records Per Page",
 			"info": "Showing Page _PAGE_ of _PAGES_",
-		}
+		},
+		"searching": false,
+		"ordering": false
 	});
 });
 

@@ -4,29 +4,35 @@
     session_start();
     /* Route */
     get('/', function(){
-        if(empty($_SESSION)){
-            header("Location: /login");
-        } else {
-            header("Location: /admin");
-        }
+        require_once ('views/cadastro/index.php');
     });
 
-    get('/login', function(){
+    get('/dashboard', function(){
+            if(empty($_SESSION)){
+                header("Location: /dashboard/login");
+            } else {
+                header("Location: /dashboard/admin");
+            }
+    });
+
+
+    get('/dashboard/login', function(){
        require_once ('views/login.php');
     });
-    get('/admin', function(){
+    get('/dashboard/admin', function(){
         require_once ('controllers/admin.php');
     });
-    get('/logout', function(){
+    get('/dashboard/logout', function(){
         require_once ('controllers/logout.php');
     });
-    get('/visitors', function(){
+    get('/dashboard/visitors', function(){
         require_once ('controllers/visitors.php');
     });
 
-    get('/products', function(){
+    get('/dashboard/products', function(){
         require_once ('controllers/products.php');
     });
+
     post('/login', function(){
         require_once ('controllers/login.php');
     });
@@ -37,6 +43,10 @@
 
     post('/products_remove', function(){
         require_once('controllers/products.php');
+    });
+
+    post('/cadastro_save', function(){
+       require_once('controllers/products.php');
     });
 
     any('/404', function(){

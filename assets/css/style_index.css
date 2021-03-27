@@ -570,3 +570,8 @@ input[type=number] {
     justify-content: center;
     align-items: center;
 } */
+
+.dashbord-btn{
+  float: right;
+  margin-top: 30px;
+}

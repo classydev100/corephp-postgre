@@ -1,15 +1,15 @@
 <?php
-include_once ('header.php');
+include_once('views/header.php');
 ?>
 <!-- Container start -->
 <div class="container">
     <form action="index.html">
         <div class="row logout">
-            <a href="/logout"><i class="icon-log-out"></i></a>
+            <a href="/dashboard/logout"><i class="icon-log-out"></i></a>
         </div>
         <div class="row justify-content-md-center">
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
-                <a href="/visitors">
+                <a href="/dashboard/visitors">
                     <div class="info-tiles admin-screen">
                         <div class="stats-detail">
                             <p class="mb-2">Total Visitors</p>
@@ -22,7 +22,7 @@ include_once ('header.php');
                 </a>
             </div>
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
-                <a href="/products">
+                <a href="/dashboard/products">
                     <div class="info-tiles admin-screen">
                         <div class="stats-detail">
                             <p class="mb-2">Total Registration</p>
@@ -39,5 +39,5 @@ include_once ('header.php');
 </div>
 <!-- Container end -->
 <?php
-include_once ('footer.php');
+include_once('views/footer.php');
 ?>
