@@ -31,7 +31,7 @@ include_once('views/header.php');
     <div class="row gutters">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="table-container">
-                <div class="t-header">Product List</div>
+                <div class="t-header"></div>
                 <div class="table-responsive">
                     <table id="productsTable" class="table custom-table">
                         <thead>

@@ -16,7 +16,7 @@
     }
 
     function add_visitor_info($conn) {
-        $data['datetime'] = date('d/m/y h:i:s');
+        $data['datetime'] = date('d/m/Y h:i:s');
         $data['ip_address'] = $_SERVER['REMOTE_ADDR'];
         $data['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
         $res = pg_insert($conn, 'visitors', $data, PGSQL_DML_EXEC );

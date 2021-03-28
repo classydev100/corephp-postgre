@@ -31,7 +31,7 @@ include_once('views/header.php');
     <div class="row gutters">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="table-container">
-                <div class="t-header">Visitor List</div>
+                <div class="t-header"></div>
                 <div class="info-icon visitor-remove">
                     <a href="#" id="visitors_remove"><i class="icon-trash"></i></a>
                 </div>

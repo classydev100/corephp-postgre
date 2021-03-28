@@ -1,11 +1,12 @@
 // Basic DataTable
 $(function(){
 	$('#visitorsTable').DataTable({
-		'iDisplayLength': 75,
-		"language": {
-			"lengthMenu": "Display _MENU_ Records Per Page",
-			"info": "Showing Page _PAGE_ of _PAGES_",
-		},
+		"bLengthChange": false,
+		'iDisplayLength': 100,
+		// "language": {
+		// 	"lengthMenu": "Display _MENU_ Records Per Page",
+		// 	"info": "Showing Page _PAGE_ of _PAGES_",
+		// },
 		"searching": false,
 		"ordering": false
 	});
@@ -13,11 +14,12 @@ $(function(){
 
 $(function(){
 	$('#productsTable').DataTable({
-		'iDisplayLength': 75,
-		"language": {
-			"lengthMenu": "Display _MENU_ Records Per Page",
-			"info": "Showing Page _PAGE_ of _PAGES_",
-		},
+		'iDisplayLength': 100,
+		"bLengthChange": false,
+		// "language": {
+		// 	"lengthMenu": "Display _MENU_ Records Per Page",
+		// 	"info": "Showing Page _PAGE_ of _PAGES_",
+		// },
 		"searching": false,
 		"ordering": false
 	});

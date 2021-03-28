@@ -6258,7 +6258,8 @@ label {
   .custom-table > tbody tr:hover {
     background: #eff3f6; }
   .custom-table > tbody tr:nth-of-type(even) {
-    background-color: #f6f8fa; }
+    /*background-color: #f6f8fa; */
+  }
   .custom-table > tbody td {
     border: 1px solid #d9dee4; }
 

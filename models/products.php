@@ -17,7 +17,7 @@
 
     function add_product($conn, $product){
         unset($product['operation']);
-        $product['datetime'] = date('d/m/y h:i:s');
+        $product['datetime'] = date('d/m/Y h:i:s');
         $res = pg_insert($conn, 'products', $product, PGSQL_DML_EXEC );
         if($res){
             $success = true;
