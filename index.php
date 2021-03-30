@@ -1,12 +1,16 @@
 <?php
+    define('CADASTRO', __DIR__.'/cadastro/views');
     include_once('helper.php');
     require_once "route.php";
     session_start();
     /* Route */
     get('/', function(){
-        require_once ('views/cadastro/index.php');
-    });
 
+        header("Location: /cadastro");
+    });
+    get('/cadastro', function(){
+        require_once ('_cadastro/controllers/products.php');
+    });
     get('/dashboard', function(){
             if(empty($_SESSION)){
                 header("Location: /dashboard/login");
@@ -15,38 +19,37 @@
             }
     });
 
-
     get('/dashboard/login', function(){
-       require_once ('views/login.php');
+       require_once ('_dashboard/views/login.php');
     });
     get('/dashboard/admin', function(){
-        require_once ('controllers/admin.php');
+        require_once ('_dashboard/controllers/admin.php');
     });
     get('/dashboard/logout', function(){
-        require_once ('controllers/logout.php');
+        require_once ('_dashboard/controllers/logout.php');
     });
-    get('/dashboard/visitors', function(){
-        require_once ('controllers/visitors.php');
+    get('/dashboard/visitas', function(){
+        require_once ('_dashboard/controllers/visitors.php');
     });
 
-    get('/dashboard/products', function(){
-        require_once ('controllers/products.php');
+    get('/dashboard/cadastros', function(){
+        require_once ('_dashboard/controllers/products.php');
     });
 
     post('/login', function(){
-        require_once ('controllers/login.php');
+        require_once ('_dashboard/controllers/login.php');
     });
 
     post('/visitors_remove', function(){
-        require_once('controllers/visitors.php');
+        require_once('_dashboard/controllers/visitors.php');
     });
 
     post('/products_remove', function(){
-        require_once('controllers/products.php');
+        require_once('_dashboard/controllers/products.php');
     });
 
     post('/cadastro_save', function(){
-       require_once('controllers/products.php');
+       require_once('_cadastro/controllers/products.php');
     });
 
     any('/404', function(){
