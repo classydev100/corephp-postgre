@@ -37,9 +37,9 @@ include_once('header.php');
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th width="150px;">Create</th>
+                                <th width="140px;">Create</th>
                                 <th width="150px;">Full Name</th>
-                                <th width="150px;">CPF</th>
+                                <th width="100px;">CPF</th>
                                 <th>Telephone</th>
                                 <th>Email</th>
                                 <th>Purchase Types and Category</th>

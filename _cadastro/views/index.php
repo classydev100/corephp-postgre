@@ -69,7 +69,7 @@
 									</div>
 									<div class="form-holder">
 										<label>*CPF</label>
-										<input id="cpfinput" type="text" name="cpf"  class="cpf form-control" onkeypress="handleMask(event, '999.999.999-99')" placeholder="digite seu CPF">
+										<input id="cpfinput" type="text" name="cpf"  class="cpf form-control" onkeyup="handleMask(event, '999.999.999-99')" placeholder="digite seu CPF" maxlength="14">
 
 										<div id="cpfvalidation">
 										    
@@ -120,7 +120,7 @@
 									</div>
 									<div class="form-holder">
 										<label>*Mês e ano da compra</label>
-										<input id="monthinput" type="text" name="month_year_purchase"  onkeypress="handleMask(event, '99/9999')" class="month_year_purchase form-control" placeholder="digite seu mês e ano de compra">
+										<input id="monthinput" type="text" name="month_year_purchase"  onkeyup="handleMask(event, '99/9999')" class="month_year_purchase form-control" placeholder="digite seu mês e ano de compra">
 										<div id="monthvalidation">
 										    
 										</div>
@@ -161,6 +161,9 @@
 
 		<script src="../../_cadastro/assets/js/main.js"></script>
 		<script src="../../_cadastro/assets/js/maskcustom.js" type="text/javascript"></script>
+        <script>
+
+        </script>
 <!-- Template created and distributed by Colorlib -->
 </body>
 </html>

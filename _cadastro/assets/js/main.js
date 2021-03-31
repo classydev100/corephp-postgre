@@ -49,7 +49,7 @@ $(function () {
                 }
 
                 $('#cpfvalidation').empty();
-                if ($('.cpf').val().replace(/-/g, '').replace(/_/g, '').replaceAll('.', '').length < 1) {
+                if ($('.cpf').val() == '') {
                     $('#cpfvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seu CPF!</p></div>');
                     $('#cpfinput').get(0).classList.add("back_red");
                 } else if ($('.cpf').val().replace(/-/g, '').replace(/_/g, '').replaceAll('.', '').length < 11 && $('.cpf').val().replace(/-/g, '').replace(/_/g, '').replaceAll('.', '').length > 0) {
