@@ -69,7 +69,7 @@
 									</div>
 									<div class="form-holder">
 										<label>*CPF</label>
-										<input id="cpfinput" type="text" name="cpf"  class="cpf form-control" onkeyup="handleMask(event, '999.999.999-99')" placeholder="digite seu CPF" maxlength="14">
+										<input id="cpfinput" type="text" name="cpf"  class="cpf form-control" placeholder="digite seu CPF">
 
 										<div id="cpfvalidation">
 										    
@@ -120,7 +120,7 @@
 									</div>
 									<div class="form-holder">
 										<label>*Mês e ano da compra</label>
-										<input id="monthinput" type="text" name="month_year_purchase"  onkeyup="handleMask(event, '99/9999')" class="month_year_purchase form-control" placeholder="digite seu mês e ano de compra">
+										<input id="monthinput" type="text" name="month_year_purchase" class="month_year_purchase form-control" placeholder="digite seu mês e ano de compra">
 										<div id="monthvalidation">
 										    
 										</div>
@@ -161,7 +161,71 @@
 
 		<script src="../../_cadastro/assets/js/main.js"></script>
 		<script src="../../_cadastro/assets/js/maskcustom.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script src="https://unpkg.com/imask"></script>
         <script>
+            $(document).ready(function() {
+                // $('#cpfinput').keydown(function () {
+                // 	// alert($(this).val())
+                //     $(this).mask('000.000.000-00');
+                // })
+
+                IMask(document.getElementById('cpfinput'), {
+                    mask: '000.000.000-00'
+                });
+
+                //             var momentFormat = 'MM/YYYY';
+                // var momentMask = IMask(document.getElementById('monthinput'), {
+                //   mask: Date,
+                //   pattern: momentFormat,
+                //   lazy: false,
+                //   min: new Date(1970, 0, 1),
+                //   max: new Date(2030, 0, 1),
+
+                //   format: function (date) {
+                //     return moment(date).format(momentFormat);
+                //   },
+                //   parse: function (str) {
+                //     return moment(str, momentFormat);
+                //   },
+
+                //   blocks: {
+                //     YYYY: {
+                //       mask: IMask.MaskedRange,
+                //       from: 1970,
+                //       to: 2030
+                //     },
+                //     MM: {
+                //       mask: IMask.MaskedRange,
+                //       from: 1,
+                //       to: 12
+                //     },
+                //     DD: {
+                //       mask: IMask.MaskedRange,
+                //       from: 1,
+                //       to: 31
+                //     },
+                //     HH: {
+                //       mask: IMask.MaskedRange,
+                //       from: 0,
+                //       to: 23
+                //     },
+                //     mm: {
+                //       mask: IMask.MaskedRange,
+                //       from: 0,
+                //       to: 59
+                //     }
+                //   }
+                // });
+
+                IMask(document.getElementById('monthinput'), {
+                    mask: '00/0000'
+                });
+                // $('#monthinput').keydown(function () {
+                //     $(this).mask('00/0000');
+                // })
+
+            })
 
         </script>
 <!-- Template created and distributed by Colorlib -->

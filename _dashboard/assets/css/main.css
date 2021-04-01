@@ -1088,7 +1088,7 @@ ul.header-tasks:last-child {
 ************************************************/
 
 .admin-screen {
-  margin-top: 400px;
+  margin-top: 150px;
   display: flex;
 }
 .admin-screen-child {
@@ -6272,8 +6272,11 @@ label {
   border-radius: 0px; }
 
 .gutters {
-  margin-right: -200px;
-  margin-left: -200px; }
+  /*margin-right: -200px;*/
+  /*margin-left: -200px; */
+  margin-right: -8px;
+  margin-left: -8px;
+}
 
 .gutters > .col,
 .gutters > [class*="col-"] {
