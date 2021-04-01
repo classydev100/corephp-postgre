@@ -5,7 +5,6 @@ function handleMask(event, mask) {
         if (!which) return
         var c = String.fromCharCode(which)
         if (c.match(/\D/)) return
-        // var c = data;
         with (target) {
             var val = value;
             var pos = selectionStart;
