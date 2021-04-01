@@ -13,7 +13,6 @@ function handleMask(event, mask) {
     var nan = count(val, /\D/, pos) // nan va calcolato prima di eliminare i separatori
     val = val.replace(/\D/g,'')
     var mask = mask.match(/^(\D*)(.+9)(\D*)$/)
-    console.log(val.length, count(mask[2],/9/));
     if (!mask) return // meglio exception?
     if (val.length > count(mask[2], /9/)) {
         return
