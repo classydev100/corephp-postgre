@@ -40,23 +40,26 @@ $(function () {
                 if ($('.fullname').val().length < 1) {
                     $('#fullnamevalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seu nome completo!</p></div>');
                     $('#fullnameinput').get(0).classList.add("back_red");
+                    flag_fullname = 0;
                 } else if ($('.fullname').val().length < 6 && $('.fullname').val().length > 0) {
                     $('#fullnamevalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> O nome completo é inválido!</p></div>');
                     $('#fullnameinput').get(0).classList.add("back_red");
+                    flag_fullname = 0;
                 } else {
                     flag_fullname = 2
                     $('#fullnameinput').get(0).classList.remove("back_red");
                 }
-
                 $('#cpfvalidation').empty();
                 if ($('.cpf').val() == '') {
                     $('#cpfvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seu CPF!</p></div>');
                     $('#cpfinput').get(0).classList.add("back_red");
+                    flag_cpf = 0
                 } else if ($('.cpf').val().replace(/-/g, '').replace(/_/g, '').replaceAll('.', '').length < 11 && $('.cpf').val().replace(/-/g, '').replace(/_/g, '').replaceAll('.', '').length > 0) {
                     $('#cpfvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> CPF inválido!</p></div>');
                     $('#cpfinput').get(0).classList.add("back_red");
+                    flag_cpf = 0
                 } else {
-                    flag_cpf = 2
+                    flag_cpf = 2;
                     $('#cpfinput').get(0).classList.remove("back_red");
                 }
 
@@ -64,11 +67,13 @@ $(function () {
                 if ($('.telephone').val().length < 1) {
                     $('#telephonevalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seu telefone!</p></div>');
                     $('#telephoneinput').get(0).classList.add("back_red");
-                } else if ($('.telephone').val().length < 10 && $('.telephone').val().length > 0) {
+                    flag_telephone = 0;
+                } else if ($('.telephone').val().length < 12 && $('.telephone').val().length > 0) {
                     $('#telephonevalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> telefone inválido!</p></div>');
                     $('#telephoneinput').get(0).classList.add("back_red");
+                    flag_telephone = 0;
                 } else {
-                    flag_telephone = 2
+                    flag_telephone = 2;
                     $('#telephoneinput').get(0).classList.remove("back_red");
                 }
 
@@ -76,14 +81,17 @@ $(function () {
                 if ($('.email').val().length < 1) {
                     $('#emailvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seu email address!</p></div>');
                     $('#emailinput').get(0).classList.add("back_red");
+                    flag_email = 0;
                 } else if ($('.email').val().length < 5 && $('.email').val().length > 0) {
                     $('#emailvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Email inválido!</p></div>');
                     $('#emailinput').get(0).classList.add("back_red");
+                    flag_email = 0;
                 } else if (!validateEmail($('.email').val())) {
                     $('#emailvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Email inválido!</p></div>');
                     $('#emailinput').get(0).classList.add("back_red");
+                    flag_email = 0;
                 } else {
-                    flag_email = 2
+                    flag_email = 2;
                     $('#emailinput').get(0).classList.remove("back_red");
                 }
                 if (newIndex == 2) {
@@ -92,11 +100,13 @@ $(function () {
                     if ($('.purchase_type').val().length < 1) {
                         $('#puchasevalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seus tipos de compra e categoria</p></div>');
                         $('#puchaseinput').get(0).classList.add("back_red");
+                        flag_category = 0;
                     } else if ($('.purchase_type').val().length < 6 && $('.purchase_type').val().length > 0) {
                         $('#puchasevalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Os tipos e categorias de compra são inválidos!</p></div>')
                         $('#puchaseinput').get(0).classList.add("back_red");
+                        flag_category = 0;
                     } else {
-                        flag_category = 2
+                        flag_category = 2;
                         $('#puchaseinput').get(0).classList.remove("back_red");
                     }
 
@@ -104,15 +114,18 @@ $(function () {
                     if ($('.request_number').val().length < 1) {
                         $('#requestnumbervalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite o seu número de solicitação</p></div>');
                         $('#requestnumberinput').get(0).classList.add("back_red");
+                        flag_request = 0;
                     } else if ($('.request_number').val().length < 16 && $('.request_number').val().length > 0) {
                         $('#requestnumbervalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> O número do pedido é inválido!</p></div>');
                         $('#requestnumberinput').get(0).classList.add("back_red");
+                        flag_request = 0;
                     } else if (!array1.includes(($('.request_number').val().toString()).charAt(0))) {
 
                         $('#requestnumbervalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> O número do pedido é inválido!</p></div>');
                         $('#requestnumberinput').get(0).classList.add("back_red");
+                        flag_request = 0;
                     } else {
-                        flag_request = 2
+                        flag_request = 2;
                         $('#monthinput').get(0).classList.remove("back_red");
                     }
 
@@ -120,11 +133,13 @@ $(function () {
                     if ($('.month_year_purchase').val().replace(/_/g, '').replace('/', '').length < 1) {
                         $('#monthvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> por favor, digite seu mês e ano de compra</p></div>');
                         $('#monthinput').get(0).classList.add("back_red");
+                        flag_month = 0;
                     } else if ($('.month_year_purchase').val().replace(/_/g, '').replace('/', '').length < 6 && $('.month_year_purchase').val().replace(/_/g, '').replace('/', '').length > 0) {
                         $('#monthvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> O mês e o ano da compra são inválidos!</p></div>');
                         $('#monthinput').get(0).classList.add("back_red");
+                        flag_month = 0;
                     } else {
-                        flag_month = 2
+                        flag_month = 2;
                         $('#luckinput').get(0).classList.remove("back_red");
                     }
 
@@ -132,12 +147,14 @@ $(function () {
                     if ($('.luck_number').val().length < 1) {
                         $('#luckvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> Por favor, digite seu número da sorte</p></div>');
                         $('#luckinput').get(0).classList.add("back_red");
+                        flag_luck = 0;
                     } else if ($('.luck_number').val().length < 3 && $('.luck_number').val().length > 0) {
 
                         $('#luckvalidation').append('<div class="tooltips"><p class="font-size-12 text-white text-center tooltips-text mb-0"> O número da sorte é inválido!</p></div>');
                         $('#luckinput').get(0).classList.add("back_red");
+                        flag_luck = 0;
                     } else {
-                        flag_luck = 2
+                        flag_luck = 2;
                         $('#requestnumberinput').get(0).classList.remove("back_red");
                     }
 
@@ -187,7 +204,6 @@ $(function () {
                         return;
                     }
                 }
-                // console.log(aaa)
                 if (flag_fullname == 2 && flag_cpf == 2 && flag_telephone == 2 && flag_email == 2) {
                     // aaa = 0;
                     // $(".check_red").removeClass("color_red");

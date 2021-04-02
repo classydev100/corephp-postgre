@@ -77,7 +77,8 @@
 									</div>
 									<div class="form-holder">
 										<label>*Telephone</label>
-										<input id="telephoneinput" type="number" name="telephone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="12"  placeholder="digite seu telefone"  class="telephone form-control">
+<!--										<input id="telephoneinput" type="number" name="telephone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="12"  placeholder="digite seu telefone"  class="telephone form-control">-->
+										<input id="telephoneinput" type="text" name="telephone"  placeholder="digite seu telefone"  class="telephone form-control">
 										<div id="telephonevalidation">
 										    
 										</div>
@@ -163,67 +164,99 @@
 		<script src="../../_cadastro/assets/js/maskcustom.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
         <script src="https://unpkg.com/imask"></script>
+        <script src="../../_cadastro/assets/js/vanilla-masker.js"></script>
         <script>
             $(document).ready(function() {
-                // $('#cpfinput').keydown(function () {
-                // 	// alert($(this).val())
-                //     $(this).mask('000.000.000-00');
-                // })
 
-                IMask(document.getElementById('cpfinput'), {
-                    mask: '000.000.000-00'
-                });
-
-                //             var momentFormat = 'MM/YYYY';
-                // var momentMask = IMask(document.getElementById('monthinput'), {
-                //   mask: Date,
-                //   pattern: momentFormat,
-                //   lazy: false,
-                //   min: new Date(1970, 0, 1),
-                //   max: new Date(2030, 0, 1),
-
-                //   format: function (date) {
-                //     return moment(date).format(momentFormat);
-                //   },
-                //   parse: function (str) {
-                //     return moment(str, momentFormat);
-                //   },
-
-                //   blocks: {
-                //     YYYY: {
-                //       mask: IMask.MaskedRange,
-                //       from: 1970,
-                //       to: 2030
-                //     },
-                //     MM: {
-                //       mask: IMask.MaskedRange,
-                //       from: 1,
-                //       to: 12
-                //     },
-                //     DD: {
-                //       mask: IMask.MaskedRange,
-                //       from: 1,
-                //       to: 31
-                //     },
-                //     HH: {
-                //       mask: IMask.MaskedRange,
-                //       from: 0,
-                //       to: 23
-                //     },
-                //     mm: {
-                //       mask: IMask.MaskedRange,
-                //       from: 0,
-                //       to: 59
-                //     }
-                //   }
+                // IMask(document.getElementById('cpfinput'), {
+                //     mask: '000.000.000-00'
                 // });
+                //
+                // IMask(document.getElementById('monthinput'), {
+                //     mask: '00/0000'
+                // });
+                // var telephoneinput = document.getElementById('telephoneinput');
+                // var dispatchMask = IMask(telephoneinput, {
+                //         mask: [
+                //             {
+                //                 mask: '(000)000000000',
+                //                 startsWith: '0',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '1',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '2',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '3',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '4',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '5',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '6',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '7',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '8',
+                //             },
+                //             {
+                //                 mask: '(00)0000000000',
+                //                 startsWith: '9',
+                //             },
+                //         ],
+                //         dispatch: function (appended, dynamicMasked) {
+                //             var number = (dynamicMasked.value + appended).replace(/\D/g,'');
+                //
+                //             return dynamicMasked.compiledMasks.find(function (m) {
+                //                 return number.indexOf(m.startsWith) === 0;
+                //             });
+                //         }
+                //     }
+                // )
 
-                IMask(document.getElementById('monthinput'), {
-                    mask: '00/0000'
-                });
-                // $('#monthinput').keydown(function () {
-                //     $(this).mask('00/0000');
-                // })
+                // VMasker(document.getElementById('cpfinput')).maskPattern("999.999.999-99");
+                // VMasker(document.getElementById('monthinput')).maskPattern("99/9999");
+
+                document.getElementById('cpfinput').addEventListener('input',function () {
+                    var c = event.target;
+                    VMasker(c).maskPattern("999.999.999-99");
+                }, false);
+
+                document.getElementById('monthinput').addEventListener('input',function () {
+                    var c = event.target;
+                    VMasker(c).maskPattern("99/9999");
+                }, false);
+
+                function inputHandlerTel(masks, max, event) {
+                    var c = event.target;
+                    console.log(c.value)
+                    var v = c.value.replace(/\D/g, '');
+                    // var m = c.value.length > max ? 1 : 0;
+                    var m = c.value.charAt(1) == 0 ? 1 : 0;
+                    VMasker(c).unMask();
+                    VMasker(c).maskPattern(masks[m]);
+                    c.value = VMasker.toPattern(v, masks[m]);
+                }
+
+                var telMask = ['(99)9999999999', '(999)999999999'];
+                var tel = document.querySelector('#telephoneinput');
+                VMasker(tel).maskPattern(telMask[0]);
+                tel.addEventListener('input', inputHandlerTel.bind(undefined, telMask, 14), false);
 
             })
 

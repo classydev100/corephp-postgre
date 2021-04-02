@@ -42,6 +42,7 @@ include_once('header.php');
                                 <th>No</th>
                                 <th>Date/Time</th>
                                 <th>IP Address</th>
+                                <th>RDNS</th>
                                 <th>User Agent</th>
                             </tr>
                         </thead>
@@ -55,6 +56,7 @@ include_once('header.php');
                                     <td><?=$i?></td>
                                     <td><?=$v['datetime']?></td>
                                     <td><?=$v['ip_address']?></td>
+                                    <td><?=$v['rdns']?></td>
                                     <td><?=$v['user_agent']?></td>
                                 </tr>
                         <?php
