@@ -6272,10 +6272,10 @@ label {
   border-radius: 0px; }
 
 .gutters {
-  /*margin-right: -200px;*/
-  /*margin-left: -200px; */
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -250px;
+  margin-left: -250px;
+  /*margin-right: -8px;*/
+  /*margin-left: -8px;*/
 }
 
 .gutters > .col,

@@ -6,7 +6,7 @@
     }
 
     function get_all_visitors($conn){
-        $result = pg_query($conn, "SELECT * FROM visitors");
+        $result = pg_query($conn, "SELECT * FROM visitors ORDER BY datetime DESC");
         return pg_fetch_all($result);
     }
 

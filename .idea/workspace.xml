@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d331c462-d7d0-4d15-b99b-7c59db46c491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_cadastro/assets/js/vanilla-masker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_cadastro/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/_cadastro/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_cadastro/controllers/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/_cadastro/controllers/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_cadastro/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/_cadastro/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dashboard/controllers/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/_dashboard/controllers/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_dashboard/views/visitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/_dashboard/views/visitors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_dashboard/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/_dashboard/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_dashboard/models/visitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/_dashboard/models/visitors.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,15 +15,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_cadastro/assets/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9807">
-              <caret line="467" column="7" selection-start-line="467" selection-start-column="7" selection-end-line="467" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_cadastro/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
@@ -37,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="677">
@@ -49,8 +35,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_cadastro/controllers/products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+            <state relative-caret-position="294">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_dashboard/assets/vendor/datatables/custom/custom-datatables.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_dashboard/models/visitors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_dashboard/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="6275" column="18" selection-start-line="6275" selection-start-column="18" selection-end-line="6275" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -77,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/_dashboard/views/visitors.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="651">
-              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+              <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -179,7 +192,6 @@
         <option value="$PROJECT_DIR$/_dashboard/views/admin.php" />
         <option value="$PROJECT_DIR$/_dashboard/controllers/login.php" />
         <option value="$PROJECT_DIR$/_dashboard/views/products.php" />
-        <option value="$PROJECT_DIR$/_dashboard/assets/css/main.css" />
         <option value="$PROJECT_DIR$/_cadastro/assets/js/maskcustom.js" />
         <option value="$PROJECT_DIR$/_cadastro/assets/js/main.js" />
         <option value="$PROJECT_DIR$/_cadastro/assets/js/vanilla-maker.js" />
@@ -188,6 +200,9 @@
         <option value="$PROJECT_DIR$/_cadastro/controllers/products.php" />
         <option value="$PROJECT_DIR$/_dashboard/views/visitors.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/_dashboard/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/_dashboard/models/visitors.php" />
+        <option value="$PROJECT_DIR$/_dashboard/assets/vendor/datatables/custom/custom-datatables.js" />
       </list>
     </option>
   </component>
@@ -223,19 +238,58 @@
             <path>
               <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
               <item name="cielo" type="462c0819:PsiDirectoryNode" />
-              <item name="_cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cielo" type="462c0819:PsiDirectoryNode" />
               <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
               <item name="cielo" type="462c0819:PsiDirectoryNode" />
               <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cielo" type="462c0819:PsiDirectoryNode" />
+              <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cielo" type="462c0819:PsiDirectoryNode" />
+              <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="main.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cielo" type="462c0819:PsiDirectoryNode" />
+              <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cielo" type="462c0819:PsiDirectoryNode" />
+              <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cielo" type="462c0819:PsiDirectoryNode" />
+              <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cielo" type="462c0819:PsiDirectoryNode" />
+              <item name="_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cielo" type="b2602c69:ProjectViewProjectNode" />
@@ -298,12 +352,12 @@
       <workItem from="1617211815103" duration="3329000" />
       <workItem from="1617267827546" duration="2817000" />
       <workItem from="1617286924773" duration="10934000" />
-      <workItem from="1617368240447" duration="2602000" />
+      <workItem from="1617368240447" duration="5385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98848000" />
+    <option name="totallyTimeSpent" value="101631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -312,6 +366,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -334,13 +389,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="873" column="9" selection-start-line="873" selection-start-column="9" selection-end-line="873" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -429,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_dashboard/models/visitors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="68" selection-start-line="18" selection-start-column="8" selection-end-line="21" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_dashboard/views/products.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
@@ -459,13 +500,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_cadastro/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_dashboard/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22890">
-          <caret line="1090" column="14" selection-start-line="1090" selection-start-column="14" selection-end-line="1090" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_cadastro/assets/js/maskcustom.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,17 +536,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_cadastro/controllers/products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_cadastro/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="234" column="16" selection-start-line="234" selection-start-column="16" selection-end-line="242" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_dashboard/views/visitors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -523,17 +557,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_dashboard/views/visitors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="677">
           <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_cadastro/controllers/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_dashboard/models/visitors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_dashboard/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="6275" column="18" selection-start-line="6275" selection-start-column="18" selection-end-line="6275" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_dashboard/assets/vendor/datatables/custom/custom-datatables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
