@@ -56,17 +56,29 @@ include_once('header.php');
                             foreach ($products as $p) {
                                 ?>
                                 <tr>
+<!--                                    <td>--><?//=$i?><!--</td>-->
+<!--                                    <td>--><?//=$p['datetime']?><!--</td>-->
+<!--                                    <td>--><?//=$p['full_name']?><!--</td>-->
+<!--                                    <td>--><?//=$p['cpf']?><!--</td>-->
+<!--                                    <td>--><?//=$p['telephone']?><!--</td>-->
+<!--                                    <td>--><?//=$p['email']?><!--</td>-->
+<!--                                    <td>--><?//=$p['purchase_type_cate']?><!--</td>-->
+<!--                                    <td>--><?//=$p['request_number']?><!--</td>-->
+<!--                                    <td>--><?//=$p['purchase_month_year']?><!--</td>-->
+<!--                                    <td>--><?//=$p['lucky_number']?><!--</td>-->
+<!--                                    <td><a href="#" class="products_remove" id="--><?//=$p['id']?><!--"><i class="icon-trash"></i></a></td>-->
+
                                     <td><?=$i?></td>
-                                    <td><?=$p['datetime']?></td>
-                                    <td><?=$p['full_name']?></td>
-                                    <td><?=$p['cpf']?></td>
-                                    <td><?=$p['telephone']?></td>
-                                    <td><?=$p['email']?></td>
-                                    <td><?=$p['purchase_type_cate']?></td>
-                                    <td><?=$p['request_number']?></td>
-                                    <td><?=$p['purchase_month_year']?></td>
-                                    <td><?=$p['lucky_number']?></td>
-                                    <td><a href="#" class="products_remove" id="<?=$p['id']?>"><i class="icon-trash"></i></a></td>
+                                    <td><?=date("d/m/Y h:i:s", strtotime($p[1]))?></td>
+                                    <td><?=$p[2]?></td>
+                                    <td><?=$p[3]?></td>
+                                    <td><?=$p[4]?></td>
+                                    <td><?=$p[5]?></td>
+                                    <td><?=$p[6]?></td>
+                                    <td><?=$p[7]?></td>
+                                    <td><?=$p[8]?></td>
+                                    <td><?=$p[9]?></td>
+                                    <td><a href="#" class="products_remove" id="<?=$p[0]?>"><i class="icon-trash"></i></a></td>
                                 </tr>
                         <?php
                                 $i++;

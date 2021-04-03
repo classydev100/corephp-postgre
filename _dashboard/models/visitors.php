@@ -1,24 +1,25 @@
 <?php
     function count_visitors($conn){
         // Get the total number of results
-        $result = pg_query($conn, "SELECT count(*) FROM visitors ");
-        return (int)pg_fetch_result($result, 0, 0);
+//        $result = pg_query($conn, "SELECT count(*) FROM visitors ");
+//        return (int)pg_fetch_result($result, 0, 0);
+        $sql = 'SELECT * FROM visitors';
+        $result = mysqli_query($conn, $sql);
+        return mysqli_num_rows($result);
     }
 
     function get_all_visitors($conn){
-        $result = pg_query($conn, "SELECT * FROM visitors ORDER BY datetime DESC");
-        return pg_fetch_all($result);
+//        $result = pg_query($conn, "SELECT * FROM visitors ORDER BY datetime DESC");
+//        return pg_fetch_all($result);
+        $sql = "SELECT * FROM visitors ORDER BY date_time DESC";
+        $result = mysqli_query($conn, $sql);
+        return mysqli_fetch_all($result);
     }
 
     function delete_all_visitors($conn){
-        $result = pg_query($conn,"DELETE FROM visitors");
-        return pg_affected_rows($result);
-    }
-
-    function add_visitor_info($conn) {
-        $data['datetime'] = date('d/m/Y h:i:s');
-        $data['ip_address'] = $_SERVER['REMOTE_ADDR'];
-        $data['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
-        $res = pg_insert($conn, 'visitors', $data, PGSQL_DML_EXEC );
-        return $res;
+//        $result = pg_query($conn,"DELETE FROM visitors");
+//        return pg_affected_rows($result);
+        $sql = 'DELETE FROM visitors';
+        $result = mysqli_query($conn,$sql);
+        return mysqli_affected_rows($conn);
     }

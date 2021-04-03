@@ -54,10 +54,10 @@ include_once('header.php');
                                 ?>
                                 <tr>
                                     <td><?=$i?></td>
-                                    <td><?=$v['datetime']?></td>
-                                    <td><?=$v['ip_address']?></td>
-                                    <td><?=$v['rdns']?></td>
-                                    <td><?=$v['user_agent']?></td>
+                                    <td><?=date("d/m/Y h:i:s", strtotime($v[1]))?></td>
+                                    <td><?=$v[2]?></td>
+                                    <td><?=$v[3]?></td>
+                                    <td><?=$v[4]?></td>
                                 </tr>
                         <?php
                                 $i++;

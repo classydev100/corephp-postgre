@@ -3,9 +3,13 @@
     if(isset($_POST['username']) && $_POST['password']){
         $username = $_POST['username'];
         $password = md5($_POST['password']);
-        $res = pg_query($conn,("Select * from users  where username='$username' and password='$password'"));
-        if(pg_num_rows($res) > 0){
-            $user = pg_fetch_array($res);
+        $sql = "Select * from users  where username='$username' and password='$password'";
+//        $res = pg_query($conn,($sql));
+        $res = mysqli_query($conn, $sql);
+//        if(pg_num_rows($res) > 0){
+        if(mysqli_num_rows($res) > 0){
+//            $user = pg_fetch_array($res);
+            $user = mysqli_fetch_array();
             $_SESSION['id']=$user['id'];
             $_SESSION['username']=$user['username'];
             if(!empty($_POST["remember"])) {
@@ -19,9 +23,6 @@
             }
 
             include_once('_dashboard/models/visitors.php');
-            $conn = db_con();
-            $res = add_visitor_info($conn);
-
             header("Location: /dashboard/admin");
         } else {
             $msg = 'Login Failed';

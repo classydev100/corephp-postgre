@@ -55,4 +55,5 @@
     any('/404', function(){
         echo 'Not found';
     });
-    pg_close($conn);
+    // pg_close($conn);
+   mysqli_close($conn);
